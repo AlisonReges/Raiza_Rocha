@@ -1,0 +1,479 @@
+.mentoria-page {
+  color: #45403c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.mentoria-hero {
+  background: #fbf5f0;
+}
+
+.mentoria-hero-container {
+  max-width: 1200px;
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mentoria-hero-content {
+  padding: 70px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mentoria-label {
+  color: #b3735d;
+
+  font-size: 9px;
+  letter-spacing: 2px;
+
+  margin-bottom: 18px;
+}
+
+.mentoria-hero h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 47px;
+  line-height: 1.12;
+
+  font-weight: 400;
+
+  color: #302c29;
+}
+
+.mentoria-hero h1 span {
+  display: block;
+
+  color: #ae715a;
+}
+
+.mentoria-hero-content > p {
+  max-width: 500px;
+
+  margin: 25px 0;
+
+  color: #746e69;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.mentoria-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.mentoria-button {
+  padding: 14px 22px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+}
+
+.mentoria-button.primary {
+  background: #6e795d;
+  color: white;
+}
+
+.mentoria-button.secondary {
+  border: 1px solid #d2c7c0;
+  color: #706962;
+  background: white;
+}
+
+.mentoria-hero-image {
+  overflow: hidden;
+}
+
+.mentoria-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+.mentoria-section-title {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto 40px;
+}
+
+.mentoria-section-title span {
+  color: #b3735d;
+
+  font-size: 9px;
+  letter-spacing: 1.7px;
+}
+
+.mentoria-section-title h2 {
+  margin: 8px 0 12px;
+
+  font-family: Georgia, serif;
+
+  font-size: 31px;
+  font-weight: 400;
+
+  color: #38332f;
+}
+
+.mentoria-section-title p {
+  color: #817a74;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   PÚBLICO
+========================= */
+
+.mentoria-publico {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 75px 30px;
+}
+
+.publico-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.publico-card {
+  padding: 30px;
+
+  border: 1px solid #eee5df;
+
+  border-radius: 8px;
+
+  background: white;
+}
+
+.publico-card > div {
+  color: #b27660;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  margin-bottom: 15px;
+}
+
+.publico-card h3 {
+  margin: 0 0 10px;
+
+  color: #4b4642;
+
+  font-size: 15px;
+}
+
+.publico-card p {
+  margin: 0;
+
+  color: #817b75;
+
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   PROGRAMA
+========================= */
+
+.mentoria-programa {
+  padding: 75px 30px;
+
+  background: #fbf5f0;
+}
+
+.programa-grid {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.programa-card {
+  padding: 25px;
+
+  background: white;
+
+  border-radius: 8px;
+
+  border: 1px solid #eee3dc;
+}
+
+.programa-card > span {
+  color: #b27660;
+
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+}
+
+.programa-card h3 {
+  margin: 12px 0 9px;
+
+  color: #4c4743;
+
+  font-size: 14px;
+}
+
+.programa-card p {
+  margin: 0;
+
+  color: #817a74;
+
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   DIFERENCIAL
+========================= */
+
+.mentoria-diferencial {
+  padding: 80px 30px;
+}
+
+.diferencial-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.diferencial-image img {
+  width: 100%;
+  height: 430px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.diferencial-content > span {
+  color: #b27660;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+.diferencial-content h2 {
+  margin: 10px 0 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  color: #393430;
+}
+
+.diferencial-content p {
+  color: #7d7771;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+.diferencial-content ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin-top: 25px;
+}
+
+.diferencial-content li {
+  margin: 11px 0;
+
+  font-size: 11px;
+
+  color: #68625d;
+}
+
+.diferencial-content li::before {
+  content: "✓";
+
+  width: 18px;
+  height: 18px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 8px;
+
+  border-radius: 50%;
+
+  background: #71805f;
+
+  color: white;
+
+  font-size: 9px;
+}
+
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.mentoria-final {
+  padding: 80px 30px;
+
+  background: #c86f4d;
+
+  color: white;
+
+  text-align: center;
+}
+
+.mentoria-final > div {
+  max-width: 650px;
+
+  margin: 0 auto;
+}
+
+.mentoria-final span {
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.85;
+}
+
+.mentoria-final h2 {
+  margin: 10px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 35px;
+
+  font-weight: 400;
+}
+
+.mentoria-final p {
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  opacity: 0.9;
+}
+
+.mentoria-final-button {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 14px 25px;
+
+  background: white;
+
+  color: #806859;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 850px) {
+
+  .mentoria-hero-container,
+  .diferencial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mentoria-hero-content {
+    padding: 60px 30px;
+  }
+
+  .mentoria-hero-image {
+    height: 400px;
+  }
+
+  .publico-grid,
+  .programa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diferencial-image img {
+    height: 350px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .mentoria-hero h1 {
+    font-size: 36px;
+  }
+
+  .mentoria-buttons {
+    flex-direction: column;
+  }
+
+  .mentoria-button {
+    text-align: center;
+  }
+
+  .mentoria-section-title h2 {
+    font-size: 27px;
+  }
+
+  .mentoria-final h2 {
+    font-size: 30px;
+  }
+
+}

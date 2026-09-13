@@ -1,0 +1,397 @@
+.contato-page {
+  color: #45403c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.contato-hero {
+  padding: 80px 30px;
+
+  background: #fbf5f0;
+
+  text-align: center;
+}
+
+.contato-hero > span {
+  color: #b3735d;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.contato-hero h1 {
+  margin: 10px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 45px;
+
+  font-weight: 400;
+
+  color: #37322e;
+}
+
+.contato-hero p {
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  color: #7b756f;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.contato-section {
+  padding: 80px 30px;
+}
+
+.contato-container {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.contato-info {
+  padding-top: 15px;
+}
+
+.contato-label {
+  color: #b3735d;
+
+  font-size: 9px;
+
+  letter-spacing: 1.7px;
+}
+
+.contato-info h2 {
+  max-width: 350px;
+
+  margin: 10px 0 18px;
+
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+
+  line-height: 1.15;
+
+  font-weight: 400;
+
+  color: #393430;
+}
+
+.contato-info > p {
+  max-width: 430px;
+
+  color: #7b756f;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+/* INFORMAÇÕES */
+
+.contato-items {
+  margin-top: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.contato-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+.contato-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f5ebe4;
+
+  color: #a16f5b;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+}
+
+.contato-item div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.contato-item strong {
+  color: #57514c;
+
+  font-size: 11px;
+}
+
+.contato-item span {
+  color: #88817b;
+
+  font-size: 10px;
+}
+
+
+/* WHATSAPP */
+
+.contato-whatsapp {
+  display: inline-block;
+
+  margin-top: 35px;
+
+  padding: 14px 22px;
+
+  background: #6d795a;
+
+  color: white;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.contato-form-wrapper {
+  padding: 35px;
+
+  background: #fbf7f3;
+
+  border: 1px solid #eee5df;
+
+  border-radius: 9px;
+}
+
+.contato-form-wrapper h2 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  color: #413c38;
+}
+
+.contato-form-wrapper > p {
+  margin: 0 0 25px;
+
+  color: #85807b;
+
+  font-size: 11px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  color: #625c57;
+
+  font-size: 10px;
+
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #ddd4cd;
+
+  border-radius: 5px;
+
+  background: white;
+
+  color: #514b47;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  outline: none;
+
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #a58a7b;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contato-form-wrapper button {
+  width: 100%;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 5px;
+
+  background: #6d795a;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.contato-form-wrapper button:hover {
+  background: #596647;
+}
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.contato-instagram {
+  padding: 70px 30px;
+
+  background: #fbf5f0;
+
+  text-align: center;
+}
+
+.contato-instagram > span {
+  color: #b3735d;
+
+  font-size: 9px;
+
+  letter-spacing: 1.7px;
+}
+
+.contato-instagram h2 {
+  margin: 10px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  color: #393430;
+}
+
+.contato-instagram p {
+  color: #7e7771;
+
+  font-size: 11px;
+}
+
+.contato-instagram a {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: #a36f5b;
+
+  font-size: 11px;
+
+  text-decoration: none;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+  .contato-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .contato-hero {
+    padding: 60px 25px;
+  }
+
+  .contato-hero h1 {
+    font-size: 36px;
+  }
+
+  .contato-section {
+    padding: 60px 20px;
+  }
+
+  .contato-form-wrapper {
+    padding: 25px;
+  }
+
+}

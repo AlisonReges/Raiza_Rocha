@@ -1,0 +1,70 @@
+.ebooks {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 30px 30px 70px;
+}
+
+.ebooks-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.ebook-card {
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  border: 1px solid #eee6df;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.ebook-card img {
+  width: 100px;
+  height: 150px;
+
+  object-fit: cover;
+}
+
+.ebook-content {
+  padding: 18px;
+}
+
+.ebook-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 13px;
+
+  color: #4e4945;
+}
+
+.ebook-content p {
+  color: #85807b;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+.ebook-content a {
+  color: #98705e;
+
+  text-decoration: none;
+
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  .ebooks-grid {
+    grid-template-columns: 1fr;
+  }
+}

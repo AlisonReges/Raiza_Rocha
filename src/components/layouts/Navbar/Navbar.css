@@ -1,0 +1,151 @@
+.navbar {
+  width: 100%;
+  height: 72px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee8e2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #5e6a4c;
+}
+
+.logo-symbol {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #b9a38d;
+  border-radius: 50%;
+
+  color: #b17b65;
+  font-size: 22px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 9px;
+  line-height: 1.25;
+  color: #756e68;
+}
+
+.logo-text strong {
+  font-weight: 500;
+}
+
+/* MENU */
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-menu a {
+  color: #4c4a47;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  color: #a56d58;
+}
+
+/* WHATSAPP */
+
+.navbar-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 12px 18px;
+
+  background-color: #697758;
+  color: white;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.navbar-whatsapp:hover {
+  background-color: #566344;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1000px) {
+
+  .navbar-menu {
+    gap: 15px;
+  }
+
+  .navbar-menu a {
+    font-size: 12px;
+  }
+
+  .navbar-whatsapp {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-container {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar-menu {
+    order: 3;
+    width: 100%;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .navbar-menu a {
+    white-space: nowrap;
+  }
+
+}
