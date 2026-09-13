@@ -10,20 +10,22 @@
 .footer-cta-container {
   max-width: 1200px;
   margin: 0 auto;
-
   min-height: 150px;
   padding: 30px 40px;
 
   display: flex;
   align-items: center;
   gap: 25px;
+
+  box-sizing: border-box;
 }
 
 .cta-icon {
   width: 55px;
   height: 55px;
+  flex-shrink: 0;
 
-  border: 1px solid rgba(255,255,255,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
 
   display: flex;
@@ -35,6 +37,7 @@
 
 .cta-content {
   flex: 1;
+  min-width: 0;
 }
 
 .cta-content span {
@@ -57,6 +60,8 @@
 }
 
 .cta-button {
+  flex-shrink: 0;
+
   background-color: white;
   color: #806c59;
 
@@ -64,7 +69,6 @@
   border-radius: 6px;
 
   text-decoration: none;
-
   font-size: 12px;
   font-weight: 600;
 }
@@ -82,32 +86,41 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-
   padding: 50px 40px;
 
   display: grid;
-  grid-template-columns: 2fr 1fr 1.4fr 1.4fr 1.3fr;
-  gap: 45px;
+
+  /*
+    Sobre | Navegação | Serviços | Contato | Newsletter
+  */
+  grid-template-columns: 2fr 1fr 1.5fr 1.7fr 1.3fr;
+
+  gap: 35px;
+
+  box-sizing: border-box;
 }
 
 
-/* SOBRE */
+/* =========================
+   SOBRE
+========================= */
 
 .footer-about {
   max-width: 250px;
+  min-width: 0;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 10px;
-
   color: #697758;
 }
 
 .footer-logo-symbol {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 
   border: 1px solid #c3aa98;
   border-radius: 50%;
@@ -121,7 +134,6 @@
 
 .footer-logo strong {
   display: block;
-
   font-size: 9px;
   line-height: 1.25;
   font-weight: 500;
@@ -132,11 +144,13 @@
 
   font-size: 11px;
   line-height: 1.7;
+
   color: #77716c;
 }
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
 }
@@ -145,31 +159,38 @@
   color: #8d7668;
   font-size: 11px;
   text-decoration: none;
+
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #bd7157;
 }
 
 
-/* COLUNAS */
+/* =========================
+   COLUNAS
+========================= */
 
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
+
+  min-width: 0;
 }
 
 .footer-column h3 {
   margin: 0 0 10px;
 
   color: #5d694e;
-
   font-size: 12px;
   font-weight: 600;
 }
 
 .footer-column a {
   color: #77716c;
-
   text-decoration: none;
-
   font-size: 11px;
 
   transition: color 0.2s;
@@ -179,17 +200,52 @@
   color: #bd7157;
 }
 
+
+/* =========================
+   CONTATO
+========================= */
+
 .footer-column p {
   margin: 0;
 
   color: #77716c;
-
   font-size: 11px;
   line-height: 1.6;
+
+  /*
+    Permite o texto quebrar sem
+    destruir o layout da coluna
+  */
+  overflow-wrap: anywhere;
+}
+
+/* Ícones dentro dos contatos */
+
+.footer-column p svg {
+  flex-shrink: 0;
+  color: #9b7563;
+  font-size: 17px;
 }
 
 
-/* NEWSLETTER */
+/*
+  Como os <p> de contato possuem ícones,
+  transformamos esses parágrafos em flex.
+*/
+.footer-column p:has(svg) {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+  min-width: 0;
+}
 
 .newsletter input {
   width: 100%;
@@ -201,13 +257,17 @@
   border-radius: 5px;
 
   font-size: 11px;
-
   outline: none;
 }
 
-.newsletter button {
-  border: none;
+.newsletter input:focus {
+  border-color: #b9a394;
+}
 
+.newsletter button {
+  width: 100%;
+
+  border: none;
   padding: 10px;
 
   background-color: #697758;
@@ -216,7 +276,6 @@
   border-radius: 5px;
 
   font-size: 11px;
-
   cursor: pointer;
 
   transition: background 0.2s;
@@ -233,7 +292,6 @@
 
 .footer-bottom {
   max-width: 1200px;
-
   margin: 0 auto;
 
   padding: 18px 40px;
@@ -243,6 +301,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-sizing: border-box;
 }
 
 .footer-bottom p {
@@ -252,51 +312,105 @@
   font-size: 10px;
 }
 
-.footer-bottom div {
+.footer-bottom > div {
   display: flex;
   gap: 20px;
 }
 
 .footer-bottom a {
   color: #99918b;
-
   text-decoration: none;
-
   font-size: 10px;
+
+  transition: color 0.2s;
+}
+
+.footer-bottom a:hover {
+  color: #bd7157;
 }
 
 
 /* =========================
-   RESPONSIVO
+   TABLET
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 40px;
   }
 
   .footer-about {
     max-width: none;
   }
 
+  .newsletter {
+    max-width: 300px;
+  }
 }
 
 
+/* =========================
+   CELULAR
+========================= */
+
 @media (max-width: 600px) {
+
+  /* CTA */
 
   .footer-cta-container {
     padding: 35px 20px;
 
     flex-direction: column;
     align-items: flex-start;
+
+    gap: 18px;
   }
+
+  .cta-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .cta-content h2 {
+    font-size: 22px;
+  }
+
+  .cta-content p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+
+  /* FOOTER */
 
   .footer-container {
     grid-template-columns: 1fr;
+
     padding: 40px 25px;
+
+    gap: 35px;
   }
+
+  .footer-about {
+    max-width: 100%;
+  }
+
+  .newsletter {
+    max-width: 100%;
+  }
+
+
+  /* BOTTOM */
 
   .footer-bottom {
     padding: 20px 25px;
@@ -307,4 +421,8 @@
     gap: 15px;
   }
 
+  .footer-bottom > div {
+    flex-direction: column;
+    gap: 8px;
+  }
 }

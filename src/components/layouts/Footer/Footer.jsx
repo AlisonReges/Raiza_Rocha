@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import { LiaWhatsapp } from "react-icons/lia";
+import { CiMail, CiLocationOn } from "react-icons/ci";
 import Logo from "../../Logo/Logo";
 
 function Footer() {
@@ -80,15 +82,15 @@ function Footer() {
           <h3>Contato</h3>
 
           <p>
-            ☎ (83) 99913-3127
+            <LiaWhatsapp /> (83) 99913-3127
           </p>
 
           <p>
-            ✉ raizaconsultoradeamamentacao@gmail.com
+            <CiMail /> raizaconsultoradeamamentacao@gmail.com
           </p>
 
           <p>
-            ♧ João Pessoa - PB
+            <CiLocationOn /> João Pessoa - PB
           </p>
 
           <p>
@@ -127,7 +129,7 @@ function Footer() {
       <div className="footer-bottom">
 
         <p>
-          © 2026 Seu Nome. Todos os direitos reservados.
+          © 2026 Raiza Rocha. Todos os direitos reservados.
         </p>
 
         <div>

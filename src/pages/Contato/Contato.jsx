@@ -1,3 +1,5 @@
+import { LiaWhatsapp } from "react-icons/lia";
+import { CiMail, CiLocationOn, CiHome } from "react-icons/ci";
 import "./Contato.css";
 
 function Contato() {
@@ -62,7 +64,7 @@ function Contato() {
               <div className="contato-item">
 
                 <div className="contato-icon">
-                  ☎
+                  <LiaWhatsapp />
                 </div>
 
                 <div>
@@ -71,7 +73,7 @@ function Contato() {
                   </strong>
 
                   <span>
-                    (83) 99999-9999
+                    (83) 99913-3127
                   </span>
                 </div>
 
@@ -81,7 +83,7 @@ function Contato() {
               <div className="contato-item">
 
                 <div className="contato-icon">
-                  ✉
+                  <CiMail />
                 </div>
 
                 <div>
@@ -90,7 +92,7 @@ function Contato() {
                   </strong>
 
                   <span>
-                    contato@seudominio.com.br
+                    raizaconsultoradeamamentacao@gmail.com
                   </span>
                 </div>
 
@@ -100,7 +102,7 @@ function Contato() {
               <div className="contato-item">
 
                 <div className="contato-icon">
-                  ⌖
+                  <CiLocationOn />
                 </div>
 
                 <div>
@@ -119,7 +121,7 @@ function Contato() {
               <div className="contato-item">
 
                 <div className="contato-icon">
-                  ⌂
+                  <CiHome />
                 </div>
 
                 <div>
@@ -138,9 +140,9 @@ function Contato() {
 
 
             <a
-              href="https://wa.me/5583999999999"
+              href="https://wa.me/5583999133127"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="Raiza Rocha - Consultora de Amamentação"
               className="contato-whatsapp"
             >
               Falar pelo WhatsApp
@@ -303,7 +305,7 @@ function Contato() {
         <a
           href="https://instagram.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Raiza Rocha - Consultora de Amamentação"
         >
           @seuinstagram →
         </a>

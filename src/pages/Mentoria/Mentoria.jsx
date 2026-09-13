@@ -32,9 +32,9 @@ function Mentoria() {
             <div className="mentoria-buttons">
 
               <a
-                href="https://wa.me/5583999999999"
+                href="https://wa.me/5583999133127?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20mentoria"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="Raiza Rocha - Mentoria para enfermeiras"
                 className="mentoria-button primary"
               >
                 Quero conhecer a mentoria
@@ -54,7 +54,7 @@ function Mentoria() {
           <div className="mentoria-hero-image">
 
             <img
-              src="/images/mentoria.jpg"
+              src="../../images/mentoria-enfermeiras.jpg"
               alt="Mentoria para enfermeiras"
             />
 
@@ -260,7 +260,7 @@ function Mentoria() {
           <div className="diferencial-image">
 
             <img
-              src="/images/mentoria-profissional.jpg"
+              src="../../images/mentoria-amamentacao.jpg"
               alt="Profissional durante mentoria"
             />
 
