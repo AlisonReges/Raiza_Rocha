@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import Logo from "../../Logo/Logo";
 
 function Footer() {
   return (
@@ -11,15 +12,7 @@ function Footer() {
         <div className="footer-about">
 
           <div className="footer-logo">
-            <div className="footer-logo-symbol">
-              ♡
-            </div>
-
-            <div>
-              <strong>Cuidado que</strong>
-              <strong>acolhe, ciência</strong>
-              <strong>que transforma.</strong>
-            </div>
+            <Logo />
           </div>
 
           <p>
@@ -87,11 +80,11 @@ function Footer() {
           <h3>Contato</h3>
 
           <p>
-            ☎ (83) 99999-9999
+            ☎ (83) 99913-3127
           </p>
 
           <p>
-            ✉ contato@seudominio.com.br
+            ✉ raizaconsultoradeamamentacao@gmail.com
           </p>
 
           <p>

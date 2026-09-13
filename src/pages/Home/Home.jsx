@@ -9,11 +9,17 @@ import CTA from "../../components/layouts/Footer/CTA";
 function Home() {
   return (
     <>
-      <Hero />
+      <section id="inicio">
+        <Hero />
+      </section>
 
-      <Services />
+      <section id="servicos">
+        <Services />
+      </section>
 
-      <About />
+      <section id="sobre">
+        <About />
+      </section>
 
       <Testimonials />
 

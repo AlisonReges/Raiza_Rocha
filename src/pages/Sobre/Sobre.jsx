@@ -23,7 +23,7 @@ function Sobre() {
           </span>
 
           <h2>
-            Prazer, sou [Seu Nome]
+            Prazer, sou Raiza Rocha
           </h2>
 
           <p>

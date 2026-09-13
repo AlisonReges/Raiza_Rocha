@@ -6,7 +6,7 @@ const services = [
     title: "Consultoria de Amamentação",
     description:
       "Avaliação completa e plano individualizado para você e seu bebê.",
-    image: "/images/service-amamentacao.jpg",
+    image: "../images/Services/Consultoria-Amamentacao.jpg",
     icon: "♡",
     link: "/servicos/amamentacao",
   },
@@ -14,7 +14,7 @@ const services = [
     title: "Laserterapia",
     description:
       "Alívio da dor, cicatrização de fissuras e prevenção de complicações.",
-    image: "/images/service-laser.jpg",
+    image: "../images/Services/Laserterapia.jpg",
     icon: "✧",
     link: "/servicos/laserterapia",
   },

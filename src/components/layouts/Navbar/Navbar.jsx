@@ -1,49 +1,71 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { LiaWhatsapp } from "react-icons/lia";
+
+import Logo from "../../Logo/Logo";
+
 import "./Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId) => {
+    if (window.location.pathname === "/") {
+      document.getElementById(sectionId)?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      navigate(`/#${sectionId}`);
+    }
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-container">
 
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <div className="logo-symbol">
-            ♡
-          </div>
-
-          <div className="logo-text">
-            <strong>Cuidado que</strong>
-            <strong>acolhe, ciência</strong>
-            <strong>que transforma.</strong>
-          </div>
+          <Logo />
         </Link>
 
         {/* Menu */}
         <nav className="navbar-menu">
 
-          <Link to="/">Início</Link>
+          <button
+            onClick={() => scrollToSection("inicio")}
+          >
+            Início
+          </button>
 
-          <Link to="/sobre">Sobre</Link>
+          <button
+            onClick={() => scrollToSection("sobre")}
+          >
+            Sobre
+          </button>
 
-          <Link to="/servicos">Serviços</Link>
+          <button
+            onClick={() => scrollToSection("servicos")}
+          >
+            Serviços
+          </button>
 
-          <Link to="/ebooks">E-books</Link>
+          <Link to="/mentoria">
+            Mentoria
+          </Link>
 
-          <Link to="/mentoria">Mentoria</Link>
-
-          <Link to="/contato">Contato</Link>
+          <Link to="/contato">
+            Contato
+          </Link>
 
         </nav>
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/5583999999999"
+          href="https://wa.me/5583999133127"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Raiza Rocha WhatsApp"
           className="navbar-whatsapp"
         >
-          <span>◉</span>
+          <LiaWhatsapp />
           Falar no WhatsApp
         </a>
 
