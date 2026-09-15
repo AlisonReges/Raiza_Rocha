@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import { CiHeart, CiLocationOn} from "react-icons/ci";
+import { BsHouse, BsBook } from "react-icons/bs";
+import { GiLaserWarning } from "react-icons/gi";
+import { LiaTapeSolid } from "react-icons/lia";
+import { IoWaterOutline, IoBookOutline } from "react-icons/io5";
 import "./Services.css";
 
 const services = [
@@ -7,7 +12,7 @@ const services = [
     description:
       "Avaliação completa e plano individualizado para você e seu bebê.",
     image: "../images/Services/Consultoria-Amamentacao.jpg",
-    icon: "♡",
+    icon: <CiHeart />,
     link: "/servicos/amamentacao",
   },
   {
@@ -15,7 +20,7 @@ const services = [
     description:
       "Alívio da dor, cicatrização de fissuras e prevenção de complicações.",
     image: "../images/Services/Laserterapia.jpg",
-    icon: "✧",
+    icon: <GiLaserWarning />,
     link: "/servicos/laserterapia",
   },
   {
@@ -23,7 +28,7 @@ const services = [
     description:
       "Técnica que promove suporte, alívio da dor e mobilidade.",
     image: "/images/service-taping.jpg",
-    icon: "◇",
+    icon: <LiaTapeSolid />,
     link: "/servicos/taping",
   },
   {
@@ -31,7 +36,7 @@ const services = [
     description:
       "Redução de inchaço, melhora da circulação e bem-estar no pós-parto.",
     image: "/images/service-drenagem.jpg",
-    icon: "✦",
+    icon: <IoWaterOutline />,
     link: "/servicos/drenagem",
   },
   {
@@ -39,7 +44,7 @@ const services = [
     description:
       "Formação completa para enfermeiras que desejam se especializar.",
     image: "/images/service-mentoria.jpg",
-    icon: "♡",
+    icon: <IoBookOutline />,
     link: "/mentoria",
   },
 ];
