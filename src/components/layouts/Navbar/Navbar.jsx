@@ -21,7 +21,6 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-
         {/* Logo */}
         <Link to="/" className="navbar-logo">
           <Logo />
@@ -29,33 +28,13 @@ function Navbar() {
 
         {/* Menu */}
         <nav className="navbar-menu">
+          <button onClick={() => scrollToSection("inicio")}>Início</button>
+          <button onClick={() => scrollToSection("servicos")}>Serviços</button>
+          <button onClick={() => scrollToSection("sobre")}>Sobre</button>
 
-          <button
-            onClick={() => scrollToSection("inicio")}
-          >
-            Início
-          </button>
+          <Link to="/mentoria">Mentoria</Link>
 
-          <button
-            onClick={() => scrollToSection("sobre")}
-          >
-            Sobre
-          </button>
-
-          <button
-            onClick={() => scrollToSection("servicos")}
-          >
-            Serviços
-          </button>
-
-          <Link to="/mentoria">
-            Mentoria
-          </Link>
-
-          <Link to="/contato">
-            Contato
-          </Link>
-
+          <Link to="/contato">Contato</Link>
         </nav>
 
         {/* WhatsApp */}
@@ -68,7 +47,6 @@ function Navbar() {
           <LiaWhatsapp />
           Falar no WhatsApp
         </a>
-
       </div>
     </header>
   );
