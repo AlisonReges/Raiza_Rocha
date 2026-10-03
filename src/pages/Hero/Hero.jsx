@@ -90,7 +90,7 @@ function Hero() {
         <div className="hero-image">
 
           <img
-            src="/images/hero.jpg"
+            src={`${import.meta.env.BASE_URL}images/hero.jpg`}
             alt="Profissional atendendo mãe e bebê"
           />
 
