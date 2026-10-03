@@ -10,7 +10,7 @@ import Ebook from "./pages/Ebook/Ebook";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Raiza_Rocha">
       <Navbar />
       <ScrollToTop />
       <Routes>
