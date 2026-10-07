@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { imagePath } from "../../utils/imagePath";
 import "./Mentoria.css";
 
 function Mentoria() {
@@ -54,7 +55,7 @@ function Mentoria() {
           <div className="mentoria-hero-image">
 
             <img
-              src="../../images/mentoria-enfermeiras.jpg"
+              src={imagePath("/images/mentoria-enfermeiras.jpg")}
               alt="Mentoria para enfermeiras"
             />
 
@@ -260,7 +261,7 @@ function Mentoria() {
           <div className="diferencial-image">
 
             <img
-              src="../../images/mentoria-amamentacao.jpg"
+              src={imagePath("/images/mentoria-amamentacao.jpg")}
               alt="Profissional durante mentoria"
             />
 

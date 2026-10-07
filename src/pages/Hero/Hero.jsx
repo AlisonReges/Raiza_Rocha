@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { CiHeart, CiLocationOn} from "react-icons/ci";
 import { BsHouse } from "react-icons/bs";
 import { GiLaserBurst, GiLaserWarning } from "react-icons/gi";
+import { imagePath } from "../../utils/imagePath";
 import "./Hero.css";
 
 function Hero() {
@@ -90,7 +91,7 @@ function Hero() {
         <div className="hero-image">
 
           <img
-            src={`${import.meta.env.BASE_URL}images/hero.jpg`}
+            src={imagePath("/images/hero.jpg")}
             alt="Profissional atendendo mãe e bebê"
           />
 

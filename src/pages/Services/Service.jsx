@@ -4,6 +4,7 @@ import { BsHouse, BsBook } from "react-icons/bs";
 import { GiLaserWarning } from "react-icons/gi";
 import { LiaTapeSolid } from "react-icons/lia";
 import { IoWaterOutline, IoBookOutline } from "react-icons/io5";
+import { imagePath } from "../../utils/imagePath";
 import "./Services.css";
 
 const services = [
@@ -11,7 +12,7 @@ const services = [
     title: "Consultoria de Amamentação",
     description:
       "Avaliação completa e plano individualizado para você e seu bebê.",
-    image: "../images/Services/Consultoria-Amamentacao.jpg",
+    image: imagePath("/images/Services/Consultoria-Amamentacao.jpg"),
     icon: <CiHeart />,
     link: "/servicos/amamentacao",
   },
@@ -19,7 +20,7 @@ const services = [
     title: "Laserterapia",
     description:
       "Alívio da dor, cicatrização de fissuras e prevenção de complicações.",
-    image: "../images/Services/Laserterapia.jpg",
+    image: imagePath("/images/Services/Laserterapia.jpg"),
     icon: <GiLaserWarning />,
     link: "/servicos/laserterapia",
   },
@@ -27,7 +28,7 @@ const services = [
     title: "Taping",
     description:
       "Técnica que promove suporte, alívio da dor e mobilidade.",
-    image: "/images/service-taping.jpg",
+    image: imagePath("/images/service-taping.jpg"),
     icon: <LiaTapeSolid />,
     link: "/servicos/taping",
   },
@@ -35,7 +36,7 @@ const services = [
     title: "Drenagem Linfática",
     description:
       "Redução de inchaço, melhora da circulação e bem-estar no pós-parto.",
-    image: "/images/service-drenagem.jpg",
+    image: imagePath("/images/service-drenagem.jpg"),
     icon: <IoWaterOutline />,
     link: "/servicos/drenagem",
   },
@@ -43,7 +44,7 @@ const services = [
     title: "Mentoria Online",
     description:
       "Formação completa para enfermeiras que desejam se especializar.",
-    image: "/images/service-mentoria.jpg",
+    image: imagePath("/images/service-mentoria.jpg"),
     icon: <IoBookOutline />,
     link: "/mentoria",
   },

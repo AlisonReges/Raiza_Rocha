@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {imagePath} from "../../utils/imagePath";
 import "./Sobre.css";
 
 function Sobre() {
@@ -10,7 +11,7 @@ function Sobre() {
         <div className="about-image">
 
           <img
-            src="/images/about.jpg"
+            src={imagePath("/images/about.jpg")}
             alt="Profissional da área materno-infantil"
           />
 
