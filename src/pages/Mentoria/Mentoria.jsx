@@ -55,7 +55,7 @@ function Mentoria() {
           <div className="mentoria-hero-image">
 
             <img
-              src={imagePath("/images/mentoria-enfermeiras.jpg")}
+              src={imagePath("/images/mentoria-enfermeiras.webp")}
               alt="Mentoria para enfermeiras"
             />
 
@@ -261,7 +261,7 @@ function Mentoria() {
           <div className="diferencial-image">
 
             <img
-              src={imagePath("/images/mentoria-amamentacao.jpg")}
+              src={imagePath("/images/mentoria-amamentacao.webp")}
               alt="Profissional durante mentoria"
             />
 

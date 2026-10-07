@@ -11,7 +11,7 @@ function Sobre() {
         <div className="about-image">
 
           <img
-            src={imagePath("/images/about.jpg")}
+            src={imagePath("/images/about.webp")}
             alt="Profissional da área materno-infantil"
           />
 

@@ -91,7 +91,7 @@ function Hero() {
         <div className="hero-image">
 
           <img
-            src={imagePath("/images/hero.jpg")}
+            src={imagePath("/images/hero.webp")}
             alt="Profissional atendendo mãe e bebê"
           />
 

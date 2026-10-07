@@ -12,7 +12,7 @@ const services = [
     title: "Consultoria de Amamentação",
     description:
       "Avaliação completa e plano individualizado para você e seu bebê.",
-    image: imagePath("/images/Services/Consultoria-Amamentacao.jpg"),
+    image: imagePath("/images/Services/Consultoria-Amamentacao.webp"),
     icon: <CiHeart />,
     link: "/servicos/amamentacao",
   },
@@ -20,7 +20,7 @@ const services = [
     title: "Laserterapia",
     description:
       "Alívio da dor, cicatrização de fissuras e prevenção de complicações.",
-    image: imagePath("/images/Services/Laserterapia.jpg"),
+    image: imagePath("/images/Services/Laserterapia.webp"),
     icon: <GiLaserWarning />,
     link: "/servicos/laserterapia",
   },
@@ -28,7 +28,7 @@ const services = [
     title: "Taping",
     description:
       "Técnica que promove suporte, alívio da dor e mobilidade.",
-    image: imagePath("/images/Services/Taping.jpg"),
+    image: imagePath("/images/Services/Taping.webp"),
     icon: <LiaTapeSolid />,
     link: "/servicos/taping",
   },
@@ -36,7 +36,7 @@ const services = [
     title: "Drenagem Linfática",
     description:
       "Redução de inchaço, melhora da circulação e bem-estar no pós-parto.",
-    image: imagePath("/images/Services/Drenagem.jpg"),
+    image: imagePath("/images/Services/Drenagem-Linfatica.webp"),
     icon: <IoWaterOutline />,
     link: "/servicos/drenagem",
   },
@@ -44,7 +44,7 @@ const services = [
     title: "Mentoria Online",
     description:
       "Formação completa para enfermeiras que desejam se especializar.",
-    image: imagePath("/images/Services/Mentoria.jpg"),
+    image: imagePath("/images/mentoria-amamentacao.webp"),
     icon: <IoBookOutline />,
     link: "/mentoria",
   },
