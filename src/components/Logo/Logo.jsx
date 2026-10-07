@@ -1,4 +1,5 @@
 import Style from "./Logo.module.css";
+import { imagePath } from "../../utils/imagePath";
 
 function Logo() {
   return (
@@ -6,7 +7,7 @@ function Logo() {
 
       <div className={Style.logoComponentSymbol}>
         <img
-          src="../../../public/images/Amamentacao-logo.svg"
+          src={imagePath("/images/Amamentacao-logo.svg")}
           alt="Consultoria de amamentação"
         />
       </div>
