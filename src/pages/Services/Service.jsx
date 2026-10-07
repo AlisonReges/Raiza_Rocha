@@ -28,7 +28,7 @@ const services = [
     title: "Taping",
     description:
       "Técnica que promove suporte, alívio da dor e mobilidade.",
-    image: imagePath("/images/service-taping.jpg"),
+    image: imagePath("/images/Services/Taping.jpg"),
     icon: <LiaTapeSolid />,
     link: "/servicos/taping",
   },
@@ -36,7 +36,7 @@ const services = [
     title: "Drenagem Linfática",
     description:
       "Redução de inchaço, melhora da circulação e bem-estar no pós-parto.",
-    image: imagePath("/images/service-drenagem.jpg"),
+    image: imagePath("/images/Services/Drenagem.jpg"),
     icon: <IoWaterOutline />,
     link: "/servicos/drenagem",
   },
@@ -44,7 +44,7 @@ const services = [
     title: "Mentoria Online",
     description:
       "Formação completa para enfermeiras que desejam se especializar.",
-    image: imagePath("/images/service-mentoria.jpg"),
+    image: imagePath("/images/Services/Mentoria.jpg"),
     icon: <IoBookOutline />,
     link: "/mentoria",
   },
